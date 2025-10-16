@@ -1,15 +1,62 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+* {
+  /* border: 2px solid red; */
+}
+
 .header  {
+  display: flex;
   font-family: monospace;
   background: papayawhip;
 }
 
+.left-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.left-links ul{
+  display: flex;
+  text-align: center;
+  list-style: none;
+  gap: 20px;
+}
+
 .logo {
+  flex: 1;
   font-size: 48px;
   font-weight: 900;
   color: tomato;
   background: white;
   padding: 4px 32px;
+  align-content: center;
+  text-align: center;
+  margin: 10px 80px;
 }
+
+.right-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-links ul{
+  display: flex;
+  text-align: center;
+  list-style: none;
+  gap: 20px;
+}
+
 
 ul {
   /* this removes the dots on the list items*/
