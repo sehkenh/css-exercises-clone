@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box  
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html, body {
@@ -16,26 +26,44 @@ body {
 }
 
 .modal {
+  padding: 16px;
+  display: flex;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
 
+
 .icon {
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.header {
+  flex: 1;
+  padding: 16px 24px;
+  font-weight: 900;
+}
+
 .close-button {
+  padding: 16px;
   background: #eee;
   border-radius: 50%;
   color: #888;
@@ -47,7 +75,14 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid #eee;
-  padding: 0;
+}
+
+.text {
+  font-size: 14px;
+  text-align: justify;
+  padding: 16px;
+  margin: 20px;
+  width: 100%;  
 }
 
 button {
